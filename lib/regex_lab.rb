@@ -3,7 +3,7 @@ if word.match(/\b[AEIOUaeiou]/)
   true
 else
   false
-  end 
+  end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
@@ -19,5 +19,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-
+  phone.match(/^[(]?\d{3}[)]?[\s]?\d{3}[\s-]?\d{4}$/) ? true : false
 end
